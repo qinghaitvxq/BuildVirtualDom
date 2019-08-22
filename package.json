@@ -1,0 +1,23 @@
+{
+  "name": "buildvirtualdom",
+  "version": "1.0.0",
+  "description": "",
+  "main": "vdom.js",
+  "scripts": {
+    "compile": "babel index.js --out-file compiled.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qinghaitvxq/BuildVirtualDom.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qinghaitvxq/BuildVirtualDom/issues"
+  },
+  "homepage": "https://github.com/qinghaitvxq/BuildVirtualDom#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1"
+  }
+}
