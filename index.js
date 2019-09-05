@@ -21,4 +21,14 @@ function view(count) {
     </ul>
   );
 }
-view(1);
+function createElement(node) {
+  if (typeof node === "string") {
+    return document.createTextNode(node);
+  }
+  const el = document.createElement(node.type);
+  node.children.map(createElement).forEach(el.appendChild.bind(el));
+  return el;
+}
+function render(el) {
+  el.appendChild(createElement(view(0)));
+}
